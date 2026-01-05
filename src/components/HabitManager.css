@@ -1,0 +1,197 @@
+.habit-manager {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.habit-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.habit-manager-header h3 {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-add-habit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-add-habit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-add-habit:active {
+  transform: translateY(0);
+}
+
+.habit-input-form {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+.habit-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.habit-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.habit-input-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-save,
+.btn-cancel {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #555;
+}
+
+.btn-cancel:hover {
+  background: #d0d0d0;
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.habit-item {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.habit-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.habit-name {
+  font-weight: 500;
+  color: #1a1a1a;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.habit-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-edit,
+.btn-remove {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit:hover {
+  background: #e3f2fd;
+  transform: scale(1.1);
+}
+
+.btn-remove:hover {
+  background: #ffebee;
+  transform: scale(1.1);
+}
+
+.no-habits {
+  text-align: center;
+  color: #999;
+  padding: 30px;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .habit-manager-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .btn-add-habit {
+    width: 100%;
+  }
+
+  .habit-input-actions {
+    flex-direction: column;
+  }
+
+  .btn-save,
+  .btn-cancel {
+    width: 100%;
+  }
+}
+

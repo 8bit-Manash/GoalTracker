@@ -1,0 +1,161 @@
+.configuration-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.configuration-section h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.config-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.config-item label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.config-item input,
+.config-item select {
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.config-item input:focus,
+.config-item select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.habits-section {
+  margin-top: 25px;
+}
+
+.habits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.habits-header h3 {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-add:active {
+  transform: translateY(0);
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.habit-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  transition: border-color 0.3s;
+}
+
+.habit-item:hover {
+  border-color: #667eea;
+}
+
+.habit-name {
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.habit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-remove {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-edit:hover {
+  background: #e3f2fd;
+}
+
+.btn-remove:hover {
+  background: #ffebee;
+}
+
+.no-habits {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .habits-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+}
+
