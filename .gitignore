@@ -23,3 +23,16 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python and test caches
+__pycache__/
+.pytest_cache/
+.coverage
+
+# Build and cache folders
+.cache/
+coverage/
